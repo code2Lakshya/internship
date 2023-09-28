@@ -1,0 +1,49 @@
+.job-wrapper{
+    width: 100vw;
+    min-height:100vh;
+    background-color: var(--bg-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.display-container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.job-header h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.job-header p{
+    font-size: 13px;
+    color: rgb(93, 93, 90);
+}
+.job-header{
+    margin-bottom: 30px;
+}
+.job-main{
+   display: flex;
+   flex-direction: column;
+   gap:14px;
+   font-size: 13px;
+   font-weight: 400;
+}
+.job-description{
+    font-weight: 600;
+}
+.salary{
+    color: green;
+    font-weight: 600;
+}
+.apply-link{
+    cursor: pointer;
+    text-decoration: underline;
+}

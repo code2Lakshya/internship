@@ -1,0 +1,90 @@
+.search{
+    background-color: var(--bg-color);
+    width: 100vw;
+    min-height: 100vh;
+    padding: 20px;
+}
+.logIn-search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.logIn-search span{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-bottom: 2px;
+    color: rgb(41, 78, 223);
+}
+.logIn-search span:hover{
+    color: rgb(179, 173, 173);
+}
+.search-wrapper{
+    overflow-x: hidden;
+}
+.search-container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 10px 0px;
+}
+.search-container h1{
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.search-container form{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container form input{
+    width: 90%;
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: 0.5px solid black;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.search-container form button{
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.search-container form button:hover{
+    color: rgb(99, 96, 96);
+}
+.output-container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#job-lower{
+    font-size: 15px;
+    font-weight: 600;
+}
+@media screen and (max-width:520px) {
+    .search-container h1{
+        font-size: 25px;
+    }
+    .search-container form input{
+        font-size: 13px;
+    }
+}

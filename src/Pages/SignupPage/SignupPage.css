@@ -1,0 +1,101 @@
+.signup-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+   background: var(--bg-color);
+}
+
+.signup-container>div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.signup-container > div h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signup-container form div {
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    border: 2px solid rgb(225, 221, 221);
+    border-radius: 8px;
+    padding: 8px;
+    align-items: center;
+    position: relative;
+}
+.signup-container form div input{
+    width: 60%;
+}
+.signup-container form div:first-child{
+    justify-content:left;
+}
+.signup-container form div:first-child input{
+    width: 80%;
+}
+.signup-container form label{
+    width: max-content;
+}
+
+.signup-container form div input {
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 2px;
+}
+.signup-container form div span{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.signup-container form div span:hover{
+    color: var(--bg-color);
+}
+.signup-container p{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 13px;
+}
+.signup-container .login{
+    color: var(--bg-color);
+    margin-left: 5px;
+    cursor: pointer;
+}
+.signup-container .login:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:520px){
+    .signup-container > div h1{
+        font-size: 35px;
+    }
+    .signup-container form div label{
+        font-size: 13px;
+    }
+    .signup-container form div input{
+        font-size: 13px;
+    }
+    .signup-container  form div{
+        flex-direction: column;
+        align-items: normal;
+    }
+}

@@ -1,0 +1,33 @@
+.preview-page{
+    background-color: var(--bg-color);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.preview-container{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+.preview-container h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.preview-container p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.preview-container p span{
+    font-weight: 600;
+}
+.preview-container button{
+    width: 100%;
+    margin-top: 20px;
+}

@@ -5,10 +5,15 @@ export const loginSlice=createSlice({
     name: 'login',
     initialState: false,
     reducers:{
-        changeLogin: (state)=>{
-            state=!state;
-        }
+        changeLogin: (state,action)=>{
+            return action.payload
+        },
+        addToSessionStorage: (state,action)=>{
+            sessionStorage.clear();
+            sessionStorage.setItem('user',JSON.stringify(action.payload));
+            return true;
+        },
     }
 });
-export const {changeLogin} =loginSlice.actions;
+export const {changeLogin,addToSessionStorage} =loginSlice.actions;
 export default loginSlice.reducer;
