@@ -22,6 +22,10 @@ const Job = () => {
             })
             .catch(error => console.log(error))
     }, [])
+    const formHandler=()=>{
+        setForm(true);
+        window.scroll(0,0);
+    }
     return (
         <div className='job-wrapper'>
             <div className={`display-container ${form? 'active':''}`}>
@@ -45,7 +49,7 @@ const Job = () => {
                                         <p > Minimum Salary : <span className='salary'>$ {jobDeatil?.job_min_salary}</span></p>
                                     </div>
                                     <p>Direct apply Link : <span className='apply-link'>{jobDeatil?.job_apply_link}</span></p>
-                                    <button  className="btn" onClick={() => setForm(true)}>Apply Now</button>
+                                    <button  className="btn" onClick={formHandler}>Apply Now</button>
                                 </div>
                             </div>))
                 }
