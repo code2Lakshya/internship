@@ -20,6 +20,9 @@
     margin-bottom: 20px;
     text-align: center;
 }
+#email{
+    word-break: break-all;
+}
 .preview-container p{
     font-size: 15px;
     font-weight: 400;
@@ -30,4 +33,12 @@
 .preview-container button{
     width: 100%;
     margin-top: 20px;
+}
+@media screen and (max-width:540px){
+    .preview-container h1{
+        font-size: 20px;
+    }
+    .preview-container p{
+        font-size: 14px;
+    }
 }

@@ -15,7 +15,7 @@ const Preview = () => {
                     <p>Application Submitted to : <span>{details.jobEmployer}</span></p>
                     <p>Applicant First Name : <span>{details.first_name}</span></p>
                     <p>Applicant Last Name : <span>{details.last_name}</span></p>
-                    <p>Email : <span>{details.email}</span></p>
+                    <p id='email'>Email : <span>{details.email}</span></p>
                     <p>Phone Number : <span>{details.phone}</span></p>
                     <p>Applicant Age : <span>{details.age}</span></p>
                     <p>Cover Letter : <span>{details.coverLetter}</span></p>
