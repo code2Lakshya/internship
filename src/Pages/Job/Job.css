@@ -50,4 +50,5 @@
 .apply-link{
     cursor: pointer;
     text-decoration: underline;
+    word-break: break-all;
 }
