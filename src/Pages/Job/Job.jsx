@@ -24,7 +24,7 @@ const Job = () => {
     }, [])
     return (
         <div className='job-wrapper'>
-            <div className='display-container'>
+            <div className={`display-container ${form? 'active':''}`}>
                 {
                     loader ? <Loader /> : (
                         jobDeatil === null ? (<h1> Network Error</h1>) : (
